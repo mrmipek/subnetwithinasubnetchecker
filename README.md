@@ -13,7 +13,7 @@ subnet1.csv and subnet2.csv should be <strong>sorted as integer ascending</stron
 as seen below within the start and end date 1.12.0.0/23 is not within any subnet and no subnet on subnet2.csv is within 1.12.0.0/23.<br />
 1.2.0.0/24&lt;-1.2.0.0/25&nbsp; &nbsp;<br />
 1.34.44.0/24-&gt;1.34.44.0/23<br />
-2.12.45.0/25-&gt;2.12.45.0/25<br />
+2.12.45.0/25-&eq;2.12.45.0/25<br />
 #RESULT#&nbsp;<br />
 <strong>subnetnotmatch.txt</strong><br />
 2023-03-18 22:34:12.348187<br />
