@@ -18,7 +18,7 @@ subnet1.csv and subnet2.csv should be <strong>sorted as integer ascending as bel
 1.34.44.0/23,234,52<br />
 2.12.45.0/25,490,27<br />
 </code></pre></div>
-as seen below within the start and end date 1.12.0.0/23 is not within any subnet and no subnet on subnet2.csv is within 1.12.0.0/23.<br />
+as seen below between the start and end date 1.12.0.0/23 is not within any subnet and no subnet on subnet2.csv is within 1.12.0.0/23.<br />
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="1.2.0.0/24&lt;-1.2.0.0/25&nbsp; &nbsp;<br />
 1.34.44.0/24-&gt;1.34.44.0/23<br />
 2.12.45.0/25-&gt;2.12.45.0/25<br />"><pre class="notranslate"><code>1.2.0.0/24&lt;-1.2.0.0/25&nbsp; &nbsp;<br />
