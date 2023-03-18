@@ -1,4 +1,4 @@
-<p>This tool takes each subnet in subnet1 and checks if it is in the subnet2 list or subnet2 subnet is within the subnet1 list, if it is not matching any of this check, it will be written to a file&nbsp;<br />
+<p>This tool takes each subnet in subnet1 list and checks if it is in the subnet2 list or subnet in subnet2 list is within the subnet1 list, if subnet1 subnet is not matching any of this check, it will be written to a file&nbsp;<br />
 subnet1.csv and subnet2.csv should be <strong>sorted as integer ascending</strong>(you can use notepad++)&nbsp;<br />
 <strong>subnet1.csv</strong>&nbsp;<br />
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="1.2.0.0/24,1234,12<br />
