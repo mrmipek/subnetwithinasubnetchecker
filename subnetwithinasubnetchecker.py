@@ -41,7 +41,7 @@ with open('subnetnotmatch.txt','w') as datawrite:
                                 a=1
                                 break
                 if a==0:
-                        datawrite.writelines(line.split(',')[0]+"\n")
+                        datawrite.writelines(line+"\n")
                 else:
                         if ind!=data1.index(line1):
                                 print(ind,data1.index(line1))
