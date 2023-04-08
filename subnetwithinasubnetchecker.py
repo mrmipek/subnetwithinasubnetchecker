@@ -2,7 +2,7 @@ import sys
 from datetime import datetime
 from netaddr import IPNetwork, IPAddress
 '''
-subnet1.csv and subnet2.csv should be sorted as integer ascending(you can use notepad++) 
+subnet1.csv and subnet2.csv should be sorted as integer ascending it is done by sortout function in the code.
 this tool takes each subnet in subnet1 and checks if it is in the subnet2 list or subnet2 subnet is within the subnet1 list,
 if it is not matching any of this check, it will be written to a file subnetnotmatch.txt 
 subnet1.csv 
@@ -20,9 +20,17 @@ subnet2.csv
 1.12.0.0/23
 2023-03-18 22:34:12.427192
 '''
+def sortout(filein,fileout):
+    with open(filein,'r') as inputFile , open(fileout, 'w') as datawrite:
+        myList = [line.strip() for line in inputFile]
+        sortedlist=sorted(myList,key=lambda x: IPNetwork(x.split(',')[0]))
+        for line1 in sortedlist:
+            datawrite.writelines(line1+"\n")
+sortout('subnet1.csv','in1.csv')
+sortout('subnet2.csv','in2.csv')
 print(str(datetime.now()))
-data = open('subnet1.csv','r').read().splitlines()
-data1 = open('subnet2.csv','r').read().splitlines()
+data = open('in1.csv','r').read().splitlines()
+data1 = open('in2.csv','r').read().splitlines()
 ind=0
 with open('subnetnotmatch.txt','w') as datawrite:
         datawrite.writelines(str(datetime.now())+"\n")
