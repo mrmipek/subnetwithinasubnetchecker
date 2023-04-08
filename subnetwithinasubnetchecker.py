@@ -17,7 +17,7 @@ subnet2.csv
 2.12.45.0/25,490,27
 ##RESULT subnetnotmatch.txt
 2023-03-18 22:34:12.348187
-1.12.0.0/23
+1.12.0.0/23,3456,34
 2023-03-18 22:34:12.427192
 '''
 def sortout(filein,fileout):
